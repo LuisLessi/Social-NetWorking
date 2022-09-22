@@ -407,3 +407,17 @@ h3 {
         transform: rotate(359deg);
     }
 }
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 3px;
+}
