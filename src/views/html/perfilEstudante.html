@@ -1,0 +1,265 @@
+<head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Perfil</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styleEstudante.css">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+                id="bootstrap-css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../script/form-perfilA.js" defer></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbT1WI1j8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/01b3655c48.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+  
+        <script src="../vue/vue.min.js"></script>
+</head>
+
+<body>
+<div id="app">
+<form id="perfilA">
+        <div class="nav-wrapper">
+                <div class="grad-bar">
+                        <div class="nav-wrapper">
+                                <div class="grad-bar"></div>
+                                <nav class="navbar">
+                                  <a href="feed.html"><img src="../../assets/SocialNet_logo.svg.png" alt="Company Logo" class="logo"></a>
+                                  <div class="menu-toggle" id="mobile-menu">
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <ul class="nav no-search">
+                                    <div class="home">
+                                <li class="nav-item"><a href="feed.html">Home</a></li>
+                                    </div>
+                                <div class="perfil">
+                                    <li class="nav-item"><a href="perfilEstudante.html">Perfil</a></li>
+                                </div>
+                                <div class="search-box">
+                        <input class="search-txt" type="text" name="" placeholder="Procurar">
+                        <a class="search-btn" href="#">
+                          <i class="fas fa-search"></i>
+                      
+                      
+                          </a>
+                                </div>
+                                <div class="sobre">
+                                        <li class="nav-item"><a href="sobre.html">Sobre</a></li>
+                                       </div>
+                                <div class="logout">
+                                <li class="nav-item"><a href="index.html">Logout</a></li>
+                        </div>
+
+                </div>
+<div class="container rounded bg-white mt-5 mb-5">
+<div class="row">
+<div class="col-md-3 border-right">
+                                                <div class="imageContainer">
+                                                        <div class="imageContainer">
+                                                                <img src="../../assets/camera.png" alt="Selecione uma imagem"
+                                                                        id="imgPhoto">
+                                                        </div>
+                                                </div>
+                                              <input v-show = "false" class="invisibleInput" type="file" id="fImage" name="fImage"
+                                                        accept="image/*">
+                                                <div class="row mt-2">
+                                                        <div>
+                                                                <label class="profileLabel"></label><input type="text"
+                                                                        name="nome" 
+                                                                        v-model="nome"class="form-control"
+                                                                        placeholder="Nome" value="">
+                                                        </div>
+
+                                                        <div><label class="profileLabel"></label><input type="text"
+                                                                        name="email" class="form-control"
+                                                                        placeholder="Seu Email" value="">
+                                                        </div>
+                                                </div>
+                                                <div
+                                                        class="d-flex justify-content-between align-items-center experience">
+                                                        <span>
+                                                                <h3>Experiências</h3>
+                                                        </span>
+                                                </div><br>
+                                                <fieldset id="fs">
+                                                        <section>
+
+                                                                <form action="#" method="post">
+                                                                        <div> <input type="text" id="newitem"
+                                                                                        placeholder=" Empresa / cargo - anos" />
+                                                                                <input type="submit" value="Add" />
+
+                                                                        </div>
+                                                                </form>
+                                                                <ul id="todolist"></ul>
+                                                        </section>
+                                                </fieldset>
+
+                                                <form id="myForm">
+
+
+
+                                                </form>
+                                        </div>
+
+                                        <div class="col-md-5 border-right">
+                                                <div class="p-3 py-5">
+                                                        <div
+                                                                class="d-flex justify-content-between align-items-center mb-3">
+                                                                <h4 class="text-right">Configurações do Perfil</h4>
+                                                        </div>
+
+
+                                                        <div class="row mt-3">
+                                                                <div class="col-md-12" required><label
+                                                                                class="labels">Número de
+                                                                                celular</label><input type="tel"
+                                                                                name="celular" id="celular"
+                                                                                placeholder="Digite seu número de celular"
+                                                                                class="form-control" maxlength="15">
+                                                                </div>
+                                                                <div class="col-md-12"><label class="labels">Número de
+                                                                                telefone</label><input type="text"
+                                                                                name="tel" id="phone"
+                                                                                placeholder="Digite seu número de telefone"
+                                                                                class="form-control" onkeypress="mask(this, mphone);
+                                                                " onblur="mask(this, mphone);" />
+                                                                </div>
+                                                                <div class="col-md-12"><label
+                                                                                class="labels">Linkedin</label><input
+                                                                                type="text" name="linkedin"
+                                                                                class="form-control"
+                                                                                placeholder="Digite o nome de sua rua"
+                                                                                value="">
+                                                                </div>
+                                                                <div class="col-md-12"><label
+                                                                                class="labels">Sites</label><input
+                                                                                type="text" name="sites"
+                                                                                class="form-control"
+                                                                                placeholder="Digite o nome de sua rua"
+                                                                                value="">
+                                                                </div>
+                                                                <div class="col-md-12"><label
+                                                                                class="labels">Bairro</label><input
+                                                                                type="text" name="bairro"
+                                                                                class="form-control"
+                                                                                placeholder="Digite o numero de sua casa"
+                                                                                value="">
+                                                                </div>
+                                                                <div class="col-md-12"><label class="labels">Data de
+                                                                                nascimento</label><input name="data"
+                                                                                class="form-control" type="date"
+                                                                                placeholder="Ex.: dd/mm/aaaa"
+                                                                                data-mask="00/00/0000" maxlength="8"
+                                                                                autocomplete="off">
+                                                                </div>
+
+
+                                                                <div class="col-md-12"><label
+                                                                                class="labels">Escolaridade</label>
+                                                                        <select type="text" v-model="ensino"class="form-control"
+                                                                                value="">
+                                                                                <option>Ensino
+                                                                                        Fundamental Incopleto </option>
+                                                                                <option>Ensino Fundamental Completo
+                                                                                </option>
+                                                                                <option>Ensino Médio Completo </option>
+                                                                                <option>Ensino Médio Incompleto
+                                                                                </option>
+                                                                                <option>Superior Incopleto </option>
+                                                                                <option>Superior Completo </option>
+                                                                                <option>Pós Graduação</option>
+                                                                        </select>
+                                                                </div>
+
+                                                        </div>
+                                                        <div class="row mt-3">
+                                                                <div class="col-md-6"><label
+                                                                                class="labels">Cidade</label><input
+                                                                                name="cidade" type="text"
+                                                                                class="form-control"
+                                                                                placeholder="Digite sua cidade"
+                                                                                value=""></div>
+                                                                <div class="col-md-6"><label
+                                                                                class="labels">Estado</label><select
+                                                                                type="text"
+                                                                                v-model="estado" class="form-control"
+                                                                                value=""
+                                                                                placeholder="Digite seu estado">
+                                                                                <option>AC</option>
+                                                                                <option>AL</option>
+                                                                                <option>AP</option>
+                                                                                <option>AM</option>
+                                                                                <option>BA</option>
+                                                                                <option>CE</option>
+                                                                                <option>DF</option>
+                                                                                <option>ES</option>
+                                                                                <option>GO</option>
+                                                                                <option>MA</option>
+                                                                                <option>MT</option>
+                                                                                <option>MS</option>
+                                                                                <option>MG</option>
+                                                                                <option>PR</option>
+                                                                                <option>PB</option>
+                                                                                <option>PE</option>
+                                                                                <option>PI</option>
+                                                                                <option>RN</option>
+                                                                                <option>RS</option>
+                                                                                <option>RJ</option>
+                                                                                <option>RO</option>
+                                                                                <option>RR</option>
+                                                                                <option>SC</option>
+                                                                                <option>SE</option>
+                                                                                <option>SP</option>
+                                                                                <option>TO</option>
+                                                                        </select></div>
+                                                        </div>
+                                                        <div id="btnSalvar" class="mt-5 text-center"><button
+                                                                        class="btn btn-primary profile-button"
+                                                                        type="button" onclick="cadastro()">Salvar Perfil</button></div>
+                                                </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                                <div class="p-3 py-5">
+                                                        <div
+                                                                class="d-flex justify-content-between align-items-center experience">
+                                                                <span>
+                                                                        <h2>Formações/cursos</h2>
+                                                                </span>
+
+                                                        </div><br>
+
+                                                        <button type="button" value="Add a field" class="add" id="add"
+                                                                onclick="addTextInput()">Add</button>
+                                                        <form id="myForm">
+                                                                <fieldset id="buildyourform"
+                                                                        placeholder="Instituição - data de conclusão">
+                                                                </fieldset>
+
+                                                </div>
+
+                                        </div>
+
+                                </div>
+
+                        </div>
+
+        </div>
+
+        </div>
+        <script src="../script/scriptPerfil.js"></script>        
+</form>
+
+</body>
+<script>
+        function cadastro(){
+  alert('Cadastro editado com sucesso');
+}
+</script>
+</html>
