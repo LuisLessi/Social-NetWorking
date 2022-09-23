@@ -1,4 +1,3 @@
-window.history.forward(1);
 
 //Add & Remove 2
 $(document).ready(function () {
