@@ -719,6 +719,7 @@ input {
 	border: 1px solid #ffffff;
 	outline: none;
 	transition: 1s ease-in-out;
+	position: center;
 
 }
 
@@ -917,4 +918,9 @@ pub:focus::after {
 	border-color: #8bbafe;
 	outline: 0;
 	box-shadow: none
+}
+@media screen and (max-width: 1280px){
+	section{
+	height: 100%;
+	}
 }

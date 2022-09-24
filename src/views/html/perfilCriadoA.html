@@ -1,0 +1,176 @@
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Perfil</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylePerfilCriadoA.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+            id="bootstrap-css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../script/form-perfilA.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbT1WI1j8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/01b3655c48.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+
+    <script src="../vue/vue.min.js"></script>
+</head>
+
+<body>
+<div id="app">
+<form id="perfilA">
+    <div class="nav-wrapper">
+            <div class="grad-bar">
+                    <div class="nav-wrapper">
+                            <div class="grad-bar"></div>
+                            <nav class="navbar">
+                              <a href="feed.html"><img src="../../assets/SocialNet_logo.svg.png" alt="Company Logo" class="logo"></a>
+                              <div class="menu-toggle" id="mobile-menu">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                              </div>
+                              <ul class="nav no-search">
+                                <div class="home">
+                            <li class="nav-item"><a href="feed.html">Home</a></li>
+                                </div>
+                            <div class="perfil">
+                                <li class="nav-item"><a href="perfilEstudante.html">Perfil</a></li>
+                            </div>
+                            <div class="search-box">
+                    <input class="search-txt" type="text" name="" placeholder="Procurar">
+                    <a class="search-btn" href="#">
+                      <i class="fas fa-search"></i>
+                  
+                  
+                      </a>
+                            </div>
+                            <div class="sobre">
+                                    <li class="nav-item"><a href="sobre.html">Sobre</a></li>
+                                   </div>
+                            <div class="logout">
+                            <li class="nav-item"><a href="index.html">Logout</a></li>
+                    </div>
+
+            </div>
+<div class="container rounded bg-white mt-5 mb-5">
+<div class="row">
+<div class="col-md-3 border-right">
+                                            <div class="imageContainer">
+                                                    <div class="imageContainer">
+                                                            <img src="../../assets/camera.png" alt="Selecione uma imagem"
+                                                                    id="imgPhoto">
+                                                    </div>
+                                            </div>
+                                          <input v-show = "false" class="invisibleInput" type="file" id="fImage" name="fImage"
+                                                    accept="image/*">
+                                            <div class="row mt-2">
+                                                    <div>
+                                                            <label class="profileLabel"></label><input type="text"
+                                                                    name="nome" 
+                                                                    v-model="nome"class="form-control"
+                                                                    placeholder="Nome" value="">
+                                                    </div>
+
+                                                    <div><label class="profileLabel"></label><input type="text"
+                                                                    name="email" class="form-control"
+                                                                    placeholder="Seu Email" value="">
+                                                    </div>
+                                            </div>
+                                            <div
+                                                    class="d-flex justify-content-between align-items-center experience">
+                                                    <span>
+                                                            <h3>Experiências</h3>
+                                                    </span>
+                                            </div><br>
+                                            
+
+                                            <form id="myForm">
+
+
+
+                                            </form>
+                                    </div>
+
+                                    <div class="col-md-5 border-right">
+                                            <div class="p-3 py-5">
+                                                    <div
+                                                            class="d-flex justify-content-between align-items-center mb-3">
+                                                            <h4 class="text-right">Configurações do Perfil</h4>
+                                                    </div>
+
+
+                                                    <div class="row mt-3">
+                                                            <div class="col-md-12" required><label
+                                                                            class="labels">Número de
+                                                                            celular</label><p>(16) 99792-9960</p>
+                                                            </div>
+                                                            <div class="col-md-12"><label class="labels">Número de
+                                                                            telefone</label><p>(16) 3204-1519</p>
+                                                            </div>
+                                                            <div class="col-md-12"><label
+                                                                            class="labels">Linkedin</label><p><a href="https://www.linkedin.com/in/lu%C3%ADs-felipe-lessi-silva-9496aa1a1/" target="_blank">https://www.linkedin.com/in/lu%C3%ADs-felipe-lessi-silva-9496aa1a1/ </a></p>
+                                                            </div>
+                                                            <div class="col-md-12"><label
+                                                                            class="labels">Sites</label><p><a href="https://github.com/LuisLessi">https://github.com/LuisLessi</a></p>
+                                                            </div>
+                                                            <div class="col-md-12"><label
+                                                                            class="labels">Endereço</label><p class="cidade">Jaboticabal</p><p class="bairro">Residencial</p><p class="sigla">SP</p>
+                                                            </div>
+                                                            <div class="col-md-12"><label class="data">Data de
+                                                                            nascimento</label><p class="nasc">18/06/2001</p>
+                                                            
+                                                                        </div>
+
+                                                                        <label
+                                                                        class="escolar">Escolaridade</label>
+                                                            <div class="col-md-12"> <label
+                                                                class="escolar"></label>
+                                                                            <p class="curso">superior completo</p>
+                                                            </div>
+
+                                                    </div>
+                                                    <div class="row mt-3">
+                                                            <div ><p></p>
+                                                            <div ><p></p></div>
+                                                    </div>
+                                                   
+                                            </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                            <div class="p-3 py-5">
+                                                    <br>
+
+                                            
+
+                                            </div>
+
+                                    </div>
+                                    
+                                </div>
+                    </div>
+    
+
+            </div>
+    </div>
+
+    </div>
+    <div
+                    class="d-flex justify-content-between align-items-center experience">
+                    <span>
+                            <h2 class="formacoes">Formações/cursos</h2>
+                    </span>
+    <script src="../script/scriptPerfil.js"></script>        
+</form>
+
+</body>
+<script>
+    function cadastro(){
+alert('Cadastro editado com sucesso');
+}
+</script>
+</html>
