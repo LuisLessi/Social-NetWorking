@@ -86,6 +86,23 @@ h3 {
     padding-left: 20px;
 }
 
+.cinza {
+    position: static;
+    background-color: #eeeeee;
+    margin-left: -16px;
+    padding-right: 147px;
+}
+
+
+
+
+
+.labelsCinza1 {
+    position: relative;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
 .logout {
     margin-right: 10px;
     border-radius: 90px;
@@ -311,39 +328,62 @@ h3 {
 .profile-tab label {
     font-weight: 600;
 }
-.cidade{
+
+.cidade {
     position: absolute;
     margin-bottom: 90px;
     margin-left: 160px;
 }
-.bairro{
+
+.bairro {
     position: absolute;
 }
-.data{
+
+.data {
     position: absolute;
     padding-top: 10px;
 }
-.nasc{
+
+.nasc {
     position: absolute;
     padding-top: 40px;
 }
 
-.escolar{
+.escolar {
     position: absolute;
-    padding-top: 500px;
+    padding-top: 680px;
+    padding-left: 14px;
 }
+
 .profileLabel {
     float: left;
     display: block;
     margin-left: 90px;
 }
-.formacoes{
+
+.formacoes {
     position: absolute;
-padding-bottom: 40px;}
+    padding-bottom: 40px;
+}
+
+.email {
+    padding-left: 10px;
+}
+
+.nome {
+    padding-left: 10px;
+}
+
+#btnEditar {
+    padding-top: 130px;
+    margin-bottom: -100px
+}
+
 .curso {
     position: absolute;
-    padding-bottom: 150px;
+    padding-top: 120px;
 }
+
 .profile-tab p {
     font-weight: 600;
     color: #0062cc;
@@ -490,12 +530,14 @@ padding-bottom: 40px;}
     background-color: #3d4852;
     border-radius: 3px;
 }
-.sigla{
+
+.sigla {
     display: absolute;
     margin-left: 330px;
     margin-top: 0px;
 }
-.estado{
+
+.estado {
     position: absolute;
     margin-top: -43px;
     margin-left: 320px;

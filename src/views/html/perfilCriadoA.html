@@ -43,10 +43,8 @@
                             <div class="search-box">
                     <input class="search-txt" type="text" name="" placeholder="Procurar">
                     <a class="search-btn" href="#">
-                      <i class="fas fa-search"></i>
-                  
-                  
-                      </a>
+                        <i class="fas fa-search"></i>        
+                        </a>
                             </div>
                             <div class="sobre">
                                     <li class="nav-item"><a href="sobre.html">Sobre</a></li>
@@ -69,15 +67,12 @@
                                                     accept="image/*">
                                             <div class="row mt-2">
                                                     <div>
-                                                            <label class="profileLabel"></label><input type="text"
-                                                                    name="nome" 
-                                                                    v-model="nome"class="form-control"
-                                                                    placeholder="Nome" value="">
+                                                            <p class="nome">Luís Felipe Lessi Silva</p>
                                                     </div>
 
-                                                    <div><label class="profileLabel"></label><input type="text"
-                                                                    name="email" class="form-control"
-                                                                    placeholder="Seu Email" value="">
+                                                    <div><label class="profileLabel"></label><p class="email">
+                                                        luisctiunesp@hotmail.com
+                                                    </p>
                                                     </div>
                                             </div>
                                             <div
@@ -99,20 +94,22 @@
                                             <div class="p-3 py-5">
                                                     <div
                                                             class="d-flex justify-content-between align-items-center mb-3">
-                                                            <h4 class="text-right">Configurações do Perfil</h4>
+                                                            <h4 class="text-right">Informações do usuário</h4>
                                                     </div>
 
 
                                                     <div class="row mt-3">
-                                                            <div class="col-md-12" required><label
-                                                                            class="labels">Número de
-                                                                            celular</label><p>(16) 99792-9960</p>
+                                                        <div class="cinza"><label
+                                                                class="labelsCinza1">Número de
+                                                                celular<p>(16) 99792-9960 &nbsp;&nbsp;&nbsp;</p>
+                                                        </label>
                                                             </div>
                                                             <div class="col-md-12"><label class="labels">Número de
                                                                             telefone</label><p>(16) 3204-1519</p>
                                                             </div>
-                                                            <div class="col-md-12"><label
-                                                                            class="labels">Linkedin</label><p><a href="https://www.linkedin.com/in/lu%C3%ADs-felipe-lessi-silva-9496aa1a1/" target="_blank">https://www.linkedin.com/in/lu%C3%ADs-felipe-lessi-silva-9496aa1a1/ </a></p>
+                                                            <div class="cinza"><label
+                                                                class="labelsCinza1">Linkedin<p><a href="https://www.linkedin.com/in/lu%C3%ADs-felipe-lessi-silva-9496aa1a1/" target="_blank">https://www.linkedin.com/in/lu%C3%ADs-felipe-lessi-silva-9496aa1a1/</a></p>
+                                                        </label>
                                                             </div>
                                                             <div class="col-md-12"><label
                                                                             class="labels">Sites</label><p><a href="https://github.com/LuisLessi">https://github.com/LuisLessi</a></p>
@@ -139,6 +136,9 @@
                                                     </div>
                                                    
                                             </div>
+                                            <div id="btnEditar" class="mt-5 text-center"><button
+                                                class="btn btn-primary profile-button"
+                                                type="button" onclick="cadastro()">Editar Perfil</button></div>
                                     </div>
 
                                     <div class="col-md-4">
@@ -152,6 +152,21 @@
                                     </div>
                                     
                                 </div>
+                                <div class="col-md-4">
+                                        <div class="p-3 py-5">
+                                                <div
+                                                        class="d-flex justify-content-between align-items-center experience">
+                                                        <span>
+                                                                <h2>Formações/cursos</h2>
+                                                        </span>
+
+                                                </div><br>
+
+                                                
+
+                                        </div>
+
+                                </div>
                     </div>
     
 
@@ -159,11 +174,7 @@
     </div>
 
     </div>
-    <div
-                    class="d-flex justify-content-between align-items-center experience">
-                    <span>
-                            <h2 class="formacoes">Formações/cursos</h2>
-                    </span>
+    
     <script src="../script/scriptPerfil.js"></script>        
 </form>
 
