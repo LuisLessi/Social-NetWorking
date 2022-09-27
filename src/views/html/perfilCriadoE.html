@@ -1,0 +1,172 @@
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Perfil Empresarial</title>
+    <script src="https://kit.fontawesome.com/01b3655c48.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/perfilCriadoE.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+            id="bootstrap-css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../script/form-perfilE.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbT1WI1j8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+
+    <script src="../vue/vue.min.js"></script>
+</head>
+
+<body>
+<div id="app">
+<form id="perfilE">
+        <div class="nav-wrapper">
+                <div class="grad-bar"></div>
+                <nav class="navbar">
+                    <a href="feed.html"><img src="../../assets/SocialNet_logo.svg.png" alt="Company Logo"></a> 
+                     <div class="menu-toggle" id="mobile-menu">
+                       <span class="bar"></span>
+                       <span class="bar"></span>
+                       <span class="bar"></span>
+                     </div>
+                     <ul>
+                      <div class="home">
+                       <li class="nav-item"><a href="feed.html">Home</a></li>
+                      </div>
+                      <div class="perfil">
+                       <li class="nav-item"><a href="perfilEstudante.html">Perfil</a></li>
+                      </div>
+                      <div class="search-box">
+                        <input class="search-txt" type="text" name="" placeholder="Procurar">
+                        <a class="search-btn" href="#">
+                          <i class="fas fa-search"></i>        
+                          </a>
+                        </div>
+                       <div class="sobre">
+                        <li class="nav-item"><a href="sobre.html">Sobre</a></li>
+                       </div>
+                       <div class="logout">
+                       <li class="nav-item"><a href="index.html">Logout</a></li>
+                      </div>
+                      
+                     </ul>
+                     
+                   </nav>
+                   </div>
+<div class="container rounded bg-white mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-3 border-right">
+            <div class="imageContainer">
+                <div class="imageContainer">
+                    <img src="../../assets/camera.png" alt="Selecione uma imagem" id="imgPhoto">
+                </div>
+            </div>
+            <input class="invisibleInput" type="file" id="fImage" name="fImage" accept="image/*">
+            <div class="row mt-2">
+                <div>
+                    <p class="nome">Google</p>
+            </div>
+
+            <div><label class="profileLabel"></label><p class="email">
+                googlecontatos@google.com.br
+            </p>
+            </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center experience">
+                <span>
+                    <h3>Vagas</h3>
+                </span>
+            </div><br>
+            <fieldset id="fs">
+                <section>
+
+                    
+                    <ul id="todolist"></ul>
+                </section>
+            </fieldset>
+
+            <form id="myForm">
+
+
+
+            </form>
+        </div>
+
+        <div class="col-md-5 border-right">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Informações da empresa</h4>
+                </div>
+
+
+                <div class="row mt-3">
+                    <div class="col-md-12" required><label>Número de
+                            celular</label><p>(11) 98101-8541</p>
+                    </div>
+                    <div class="cinza"><label class="labels">Número de
+                            telefone</label><p class="labels">0800 047 4795</p>
+                    </div>
+                    <div class="col-md-12"><label>Linkedin</label><p><a href="https://www.linkedin.com/company/google/jobs/" target="_blank">https://www.linkedin.com/company/google/jobs/</a></p>
+                    </div>
+                    <div class="cinza"><label class="labels">Sites</label><p class="labels"><a href="#">https://careers.google.com/?src=Online%2FLinkedIn%2Flinkedin_profilepage&utm_campaign=profilepage&utm_medium=profilepage&utm_source=linkedin</a></p>
+                    </div>
+
+                    <div class="col-md-12"><label>Data de
+                            fundação</label><p>04/09/1998</p>
+                    </div>
+
+
+
+
+                </div>
+                <div class="row mt-3">
+
+
+                </div>
+                <div class="col-md-12"><label class="labelInfo">Sobre</label>
+                    <textarea type="text" name="sobre" class="form-control"
+                    placeholder="Um problema não é realmente resolvido até que seja resolvido para todos. O Google cria produtos que ajudam a criar oportunidades para todos, seja na rua ou em todo o mundo. Traga sua visão, imaginação e um saudável desrespeito pelo impossível. Traga tudo o que o torna único. Juntos, podemos construir para todos." value=""
+                    maxlength="1000" style="height: 120px;" disabled="disabled"></textarea>
+                </div>
+                
+                <div id="btnSalvar" class="mt-5 text-center"><button class="btn btn-primary profile-button"
+                        type="button">Editar Perfil</button></div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center experience">
+                    <span>
+                        <h2>Sedes da empresa</h2>
+                    </span>
+
+                </div><br>
+
+               
+                <form id="myForm">
+                    <fieldset id="buildyourform" placeholder="">
+                    </fieldset>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    </div>
+
+    </div>
+    
+</form>
+
+</body>
+<script>
+    function cadastro(){
+alert('Cadastro editado com sucesso');
+}
+</script>
+</html>

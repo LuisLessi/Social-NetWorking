@@ -23,10 +23,6 @@ h3 {
 
 }
 
-#meio {
-    padding-bottom: 40px;
-}
-
 .search-box:hover>.search-txt {
 
     width: 240px;
@@ -93,41 +89,12 @@ h3 {
     padding-top: 10px;
 }
 
-.cinza {
-    min-width: 474px;
-    margin-left: -16px;
-    background-color: #eeeeee;
-}
 
-.cinza2 {
-    min-width: 474px;
-    margin-left: -15px;
-    margin-top: 30px;
-    background-color: #eeeeee;
-    border-top: 90px;
-    padding-bottom: 5px;
-}
 
-.col-md-12 {
-    border-bottom: 900px;
-}
-
-.labels {
-    word-break: break-word;
+.labelsCinza1 {
+    position: relative;
     padding-left: 30px;
-}
-
-.bairro {
-    position: absolute;
-    padding-left: 180px;
-    margin-top: -40px;
-}
-
-
-.sigla {
-    position: absolute;
-    padding-left: 370px;
-    margin-top: -40px;
+    padding-top: 30px;
 }
 
 .logout {
@@ -357,9 +324,16 @@ h3 {
     font-weight: 600;
 }
 
+.cidade {
+    position: absolute;
+    margin-bottom: 90px;
+    margin-left: 160px;
+}
 
-
-
+.bairro {
+    position: absolute;
+    padding-left: 16px;
+}
 
 .data {
     position: absolute;
@@ -383,7 +357,9 @@ h3 {
     margin-left: 90px;
 }
 
-
+.endere {
+    margin-left: 16px;
+}
 
 .formacoes {
     position: absolute;
@@ -398,7 +374,10 @@ h3 {
     padding-left: 10px;
 }
 
-
+#btnEditar {
+    padding-top: 130px;
+    margin-bottom: -100px
+}
 
 .curso {
     position: absolute;
@@ -552,10 +531,29 @@ h3 {
     border-radius: 3px;
 }
 
-
+.sigla {
+    display: absolute;
+    margin-left: 330px;
+    margin-top: 0px;
+}
 
 .estado {
     position: absolute;
     margin-top: -43px;
     margin-left: 320px;
+}
+
+.cinza {
+    min-width: 474px;
+    margin-left: -16px;
+    background-color: #eeeeee;
+}
+
+.labels {
+    word-break: break-word;
+    padding-left: 30px;
+}
+
+.labelInfo {
+    padding-left: 170px;
 }
