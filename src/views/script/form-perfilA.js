@@ -1,19 +1,18 @@
-
-var btnSalvar = document.querySelector("#btnSalvar");
-
-btnSalvar.addEventListener("click", function (event) {
-    event.preventDefault();
-
-    var frmAluno = document.querySelector("#perfilA");
-    console.log(frmAluno.tel.value);
-    console.log(frmAluno.celular.value);
-    console.log(frmAluno.nome.value);
-    console.log(frmAluno.email.value);
-    console.log(frmAluno.linkedin.value);
-    console.log(frmAluno.sites.value);
-    console.log(frmAluno.bairro.value);
-    console.log(frmAluno.cidade.value);
-
+new Vue({
+    el: '#app',
+    data: {
+        nome: null,
+        email: null,
+        error: []
+    },
+    methods: {
+        checkForm: function () {
+            if (!this.nome) {
+                this.errors.push('O nome deve ser preenchido')
+            }
+            if (!this.email) {
+                this.errors.push('O email deve ser preenchido')
+            }
+        }
+    }
 })
-
-

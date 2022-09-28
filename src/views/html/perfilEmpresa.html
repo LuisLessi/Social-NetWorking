@@ -17,7 +17,7 @@
 
 <body >
     <div id="app">
-        <form id="perfilA">
+        <form action="" v-on:submit.prevent="checkform">
             <div class="nav-wrapper">
                 <div class="grad-bar"></div>
                 <nav class="navbar">
@@ -62,12 +62,12 @@
                         <input class="invisibleInput" type="file" id="fImage" name="fImage" accept="image/*">
                         <div class="row mt-2">
                             <div>
-                                <label class="profileLabel"></label><input type="text" name="nome" class="form-control"
-                                    placeholder="Nome da Empresa" value="">
+                                <label class="profileLabel"></label><input type="nome"  class="form-control"
+                                    placeholder="Nome da Empresa" v-model="nome">
                             </div>
 
-                            <div><label class="profileLabel"></label><input type="text" name="email"
-                                    class="form-control" placeholder="Email para curriculum" value="">
+                            <div><label class="profileLabel"></label><input type="email"
+                                    class="form-control" placeholder="Email para curriculum" v-model="email">
                             </div>
                         </div>
                         <div class="d-flex justify-content-between align-items-center experience">
@@ -139,8 +139,8 @@
                                     placeholder="Conte um pouco sobre a cultura de sua empresa" value=""
                                     maxlength="1000" style="height: 120px;"></textarea>
                             </div>
-                            <div id="btnSalvar" class="mt-5 text-center"><button class="btn btn-primary profile-button"
-                                    type="button">Salvar Perfil</button></div>
+                           <div id = "salvaPerfilE" class="mt-5 text-center"><button class="btn btn-primary profile-button"
+                                type="button">Salvar Perfil</button></div>
                         </div>
                     </div>
 
@@ -166,13 +166,12 @@
                 </div>
 
             </div>
-
+        </form>
+        
     </div>
 
-    </div>
     <script src="../script/scriptPerfil.js"></script>
-    </form>
-    </div>
+
 </body>
 
 </html>

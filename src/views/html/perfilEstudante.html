@@ -72,12 +72,12 @@
                                                                 <label class="profileLabel"></label><input type="text"
                                                                         name="nome" 
                                                                         v-model="nome"class="form-control"
-                                                                        placeholder="Nome" value="">
+                                                                        placeholder="Nome" required>
                                                         </div>
 
                                                         <div><label class="profileLabel"></label><input type="text"
                                                                         name="email" class="form-control"
-                                                                        placeholder="Seu Email" value="">
+                                                                        placeholder="Seu Email" required>
                                                         </div>
                                                 </div>
                                                 <div
@@ -116,12 +116,12 @@
 
 
                                                         <div class="row mt-3">
-                                                                <div class="col-md-12" required><label
+                                                                <div class="col-md-12"><label
                                                                                 class="labels">Número de
                                                                                 celular</label><input type="tel"
                                                                                 name="celular" id="celular"
                                                                                 placeholder="Digite seu número de celular"
-                                                                                class="form-control" maxlength="15">
+                                                                                class="form-control" maxlength="15" required>
                                                                 </div>
                                                                 <div class="col-md-12"><label class="labels">Número de
                                                                                 telefone</label><input type="text"
@@ -156,7 +156,7 @@
                                                                                 class="form-control" type="date"
                                                                                 placeholder="Ex.: dd/mm/aaaa"
                                                                                 data-mask="00/00/0000" maxlength="8"
-                                                                                autocomplete="off">
+                                                                                autocomplete="off"required>
                                                                 </div>
 
 
@@ -219,9 +219,9 @@
                                                                                 <option>TO</option>
                                                                         </select></div>
                                                         </div>
-                                                        <div id="btnSalvar" class="mt-5 text-center"><button
+                                                        <a href="./perfilCriadoA.html"><div id="salvarPerfilA" class="mt-5 text-center"><button
                                                                         class="btn btn-primary profile-button"
-                                                                        type="button" onclick="cadastro()">Salvar Perfil</button></div>
+                                                                        type="button">Salvar Perfil</button></div></a>
                                                 </div>
                                         </div>
 

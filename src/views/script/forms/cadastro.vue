@@ -1,4 +1,21 @@
 <script>
+new Vue({
+    el: '#app',
+    data: {
+        nome: null,
+        email: null,
+        error: []
+    },
+    methods: {
+        checkForm: function () {
+
+        }
+    }
+})
+
+</script>
+<!-- 
+<script>
 import axios from 'axios'
 
 export default {
