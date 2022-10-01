@@ -282,18 +282,36 @@ body {
 }
 
 
+
 .input-block label {
 	font-size: 14px;
 	color: #a1b4b4;
 }
+
 
 p {
 	font-size: 14px;
 	color: #a1b4b4;
 }
 
+
+
 .input-block input {
-	display: block;
+	display: absolute;
+	width: 100%;
+	margin-top: 8px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 16px;
+	line-height: 40px;
+	color: #3b4465;
+	background: #eef9fe;
+	border: 1px solid #cddbef;
+	border-radius: 2px;
+}
+
+.input-block input {
+	display: absolute;
 	width: 100%;
 	margin-top: 8px;
 	padding-right: 15px;

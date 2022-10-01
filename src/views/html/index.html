@@ -53,6 +53,7 @@
                   <label for="login-email">E-mail</label>
                   <input id="login-email" type="email" name="emailLog" required>
                 </div>
+          
                 
                 <div class="input-block">
                   <label for="login-password">Password</label>
@@ -68,12 +69,32 @@
               <span class="underline"></span>
             </button>
           </form>
+          
             <form @submit.prevent="criarConta" class="form form-signup">
               <fieldset>
-                <legend>Por favor, insira seu e-mail, senha e confirmação de senha para se inscrever.</legend>
+                <legend>Por favor, preencha os dados abaixo para se cadastra.</legend>
+                <div class="input-block">
+                  <label for="signupEmail">Nome completo</label>
+                  <input class = "label-nome" id="signupEmail" type="nome" required>
+
+                </div>
                 <div class="input-block">
                   <label for="signupEmail">E-mail</label>
-                  <input id="signupEmail" type="email" v-model="formData.signupEmail" required>
+                  <input id="signupEmail" type="email"  required>
+
+                </div>
+                <div class="input-block">
+                  <label for="signupTel">N° de celular</label>
+                  <input type="text" name="tel" id="phone"
+                   class="form-control" onkeypress="mask(this, mphone);
+                                      " onblur="mask(this, mphone);" required/>
+
+                </div>
+                <div class="input-block">
+                  <label for="signupEmail">Data de nascimento</label>
+                  <input name="data" class="form-control" type="date"
+                  placeholder="Ex.: dd/mm/aaaa" data-mask="00/00/0000" maxlength="8"
+                  autocomplete="off" required>
 
                 </div>
                 <div class="input-block">
@@ -110,6 +131,8 @@
         </div>
       </section>
     </div>
+    <script src="../script/scriptPerfil.js"></script>
+
     <script src="../script/scriptIndex.js"></script>
 
   </body>
